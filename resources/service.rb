@@ -24,7 +24,7 @@ attribute :name, kind_of: String, name_attribute: true
 
 def initialize(*args)
   super
-  @provider = Chef::Provider::GraphiteServiceRunit
+  @provider = Chef.provider_handler_map.list(node, :graphite_service_runit).first
 end
 
 def service_name
