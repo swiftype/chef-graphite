@@ -23,6 +23,8 @@ default_action :create
 attribute :name, kind_of: String, name_attribute: true
 attribute :file_resource, kind_of: String, default: "file[carbon.conf]"
 
+unified_mode true
+
 def initialize(*args)
   super
   @provider = Chef::Provider::GraphiteCarbonConfAccumulator

@@ -22,3 +22,5 @@ default_action :create
 attribute :path, kind_of: String, name_attribute: true
 attribute :config, kind_of: Hash, default: nil
 attribute :dynamic_template, kind_of: String, default: "local_settings_dynamic.py"
+
+unified_mode true

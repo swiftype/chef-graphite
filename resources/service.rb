@@ -22,6 +22,8 @@ default_action :enable
 
 attribute :name, kind_of: String, name_attribute: true
 
+unified_mode true
+
 def initialize(*args)
   super
   @provider = Chef.provider_handler_map.list(node, :graphite_service_runit).first
