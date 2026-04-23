@@ -24,6 +24,8 @@ attribute :name, kind_of: String, name_attribute: true
 attribute :backend, kind_of: [String, Hash], default: "whisper"
 attribute :config, kind_of: Hash, default: nil
 
+unified_mode true
+
 def backend_name
   backend.is_a?(Hash) ? backend["name"] : backend
 end

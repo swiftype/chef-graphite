@@ -24,3 +24,5 @@ attribute :prefix, kind_of: String, name_attribute: true
 attribute :package_name, kind_of: String, default: "whisper"
 attribute :version, kind_of: String, default: nil
 attribute :type, kind_of: String, default: "whisper"
+
+unified_mode true
